@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lucy Carter</title>
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+    </head>
+
+    <!-- Nav Bar -->
+    <body>
+        <div class="nav">
+            <div class="mobile-bar">
+                <div class="logo">
+                    <a href="home.html">Lucy Carter</a>
+                </div>
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="navlinks">
+                <li class="navlink">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="navlink">
+                    <i class="fas fa-times"></i>
+                </li>
+
+                <li class="navlink navlink-active">
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Post 1 -->
+            <div class="card-outer2">
+                <h2 class="heading">Website Immitation</h2>
+                <img
+                    class="image"
+                    src="images/websiteimmitation.png"
+                    width="40%"
+                />
+                <div class="description">
+                    <p>
+                        For this micro-assignment I looked Paul Fuentes Design.
+                        I looked at taking a static image and coding that rather
+                        that attemping to code an image carousel at this stage.
+                        I struggled to center image over text which I am
+                        missing.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="card-outer2">
+                <h2 class="heading">Blog Wireframes</h2>
+                <img class="image" src="images/wireframes.png" width="40%" />
+                <div class="description">
+                    <p>
+                        My wireframes are quite a simple design looking have
+                        having a navigation bar at the top of both home and my
+                        blog post page.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="card-outer2">
+                <h2 class="heading">First Blog Draft</h2>
+                <img class="image" src="images/blogdraft.png" width="40%" />
+                <div class="description">
+                    <p>
+                        I started by blog layout so it includes a header, nav
+                        bar and footer. I'm still unsure as to what content to
+                        put on the homepage but on my reflections page I wish to
+                        have all my posts in order from oldest to newest so you
+                        are able to scroll through them.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="card-outer2">
+                <h2 class="heading">Javascript</h2>
+                <img class="image" src="images/javascript.png" width="40%" />
+                <div class="description">
+                    <p>
+                        For my version of a lightbulb turning on and off I made
+                        a an option to look at a puppy or grown golden
+                        retriever.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Post 5 -->
+            <div class="card-outer2">
+                <h2 class="heading">Group Website Navigation</h2>
+                <img class="image" src="images/navbar.png" width="40%" />
+                <div class="description">
+                    <p>
+                        For our group website navigation bar I coded the page
+                        links to when hovered over top to change to the same
+                        green as the icon but when unvisited or selcted them
+                        remain black. After coding our groups website nav bar I
+                        made the decision to make my personal website nav
+                        simular as it looks sleek and refined.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Post 6 -->
+            <div class="card-outer2">
+                <h2 class="heading">Group Website Carousel</h2>
+                <img class="image" src="images/carousel.png" width="40%" />
+                <div class="description">
+                    <p>
+                        Using javascript fancybox code, I was able to put an
+                        image carousel on our website homepage.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Post 7 -->
+            <div class="card-outer2">
+                <h2 class="heading">Code for Home and Nav Bar</h2>
+                <img class="image" src="images/finalcode.png" width="40%" />
+                <div class="description">
+                    <p>
+                        I went through and cleaned up CSS file and added in all
+                        the code for mobile website. After figuring out how to
+                        code mobile functions for group website I went and added
+                        these functions to my personal blog.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(".fa-bars").click(function () {
+                $(".navlinks").slideDown();
+                $(".fa-times").css("opacity", 1);
+            });
+            $(".fa-times").click(function () {
+                $(".fa-times").css("opacity", 0);
+                $(".navlinks").slideUp();
+            });
+        </script>
+    </body>
+</html>
